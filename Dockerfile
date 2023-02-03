@@ -10,7 +10,6 @@
             mkdir $home/.ssh && \
             touch $home/.ssh/authorized_keys && \
             chown sshuser:sshgroup $home/.ssh/authorized_keys && \
-            chmod 600 $home/.ssh/authorized_keys
-            chmod 600 /etc/ssh/sshd_config
-        EXPOSE 22
+            chmod 600 $home/.ssh/authorized_keys          
+        EXPOSE 98
         CMD /usr/sbin/sshd && sleep infinity
