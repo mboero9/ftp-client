@@ -12,4 +12,4 @@
             chown sshuser:sshgroup $home/.ssh/authorized_keys && \
             chmod 600 $home/.ssh/authorized_keys          
         EXPOSE 98
-        CMD /usr/sbin/sshd && sleep infinity
+        CMD sleep infinity
